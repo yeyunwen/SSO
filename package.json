@@ -1,0 +1,12 @@
+{
+  "name": "sso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server:dev": "pnpm -F server start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

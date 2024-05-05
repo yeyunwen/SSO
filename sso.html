@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/protectd" method="get">
+      <label for="username">
+        账号： <input type="text" name="username" id="username" />
+      </label>
+      <label for="password"
+        >密码：<input name="password" id="password" type="password"
+      /></label>
+      <label for="appId"
+        ><input name="appId" value="" id="appId" type="hidden"
+      /></label>
+      <button type="submit" id="button">登录</button>
+    </form>
+
+    <script>
+      const urlSearchParams = new URLSearchParams(location.search);
+      const appId = urlSearchParams.get("appId");
+      document.querySelector("#appId").value = appId;
+    </script>
+  </body>
+</html>
